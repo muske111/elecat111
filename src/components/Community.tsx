@@ -44,7 +44,7 @@ const Community: React.FC = () => {
             icon={<Github className="h-10 w-10" />}
             name="GitHub"
             description="View our code"
-            link="#"
+            link="https://github.com/muske111/elecat111/tree/main"
             bgColor="bg-gray-500/10 hover:bg-gray-500/20"
             textColor="text-gray-300"
           />
