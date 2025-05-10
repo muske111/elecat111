@@ -53,13 +53,9 @@ const Hero: React.FC = () => {
           <div className="relative">
             <div className="relative z-10 p-6 float">
               <img 
-                src=<img
-  src="https://raw.githubusercontent.com/muske111/elecat111/main/cryingcat.jpeg"
-  alt="Crying Cat"
-  style={{ width: '300px', borderRadius: '12px' }}
-/>
+                src="https://raw.githubusercontent.com/muske111/elecat111/main/cryingcat.jpeg"
                 alt="Sad cat looking for owner" 
-                className="w-full h-auto rounded-2xl shadow-2xl transform -rotate-3"
+                className="w-full max-w-sm h-auto rounded-2xl shadow-2xl transform -rotate-3"
               />
               <div className="absolute -top-10 -right-10 w-24 h-24 coin-spin">
                 <div className="w-full h-full rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 flex items-center justify-center shadow-lg">
@@ -68,6 +64,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
