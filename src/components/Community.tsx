@@ -17,7 +17,7 @@ const Community: React.FC = () => {
             icon={<Twitter className="h-10 w-10" />}
             name="Twitter"
             description="Follow for updates"
-            link="#"
+            link="https://x.com/ele_lost"
             bgColor="bg-[#1DA1F2]/10 hover:bg-[#1DA1F2]/20"
             textColor="text-[#1DA1F2]"
           />
