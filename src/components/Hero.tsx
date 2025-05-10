@@ -22,15 +22,7 @@ const Hero: React.FC = () => {
     <section className="pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       <div className="container-section relative">
         <div className="absolute top-40 right-0 -rotate-12 opacity-20 w-96 h-96 bg-yellow-400 rounded-full blur-3xl" />
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="z-10">
-            <div className="inline-flex items-center px-4 py-2 mb-6 rounded-full bg-indigo-800/50 border border-indigo-600">
-              <TrendingUp className="h-4 w-4 text-green-400 mr-2" />
-              <span className="text-sm font-medium">
-               
-              </span>
-            </div>
+       
             
             <h1 className="section-title glow mb-4">
               $ELE: The Cat's <br />Journey Home
