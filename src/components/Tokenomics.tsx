@@ -47,15 +47,6 @@ const Tokenomics: React.FC = () => {
                 />
                 
                 <TokenStat
-                  title="Development Fund"
-                  percentage={5}
-                  description="5% allocated for ongoing development"
-                  color="from-indigo-400 to-blue-600"
-                  delay={0.5}
-                  isAnimated={animateChart}
-                />
-                
-                <TokenStat
                   title="Charity Fund"
                   percentage={5}
                   description="5% to help real cats find homes"
