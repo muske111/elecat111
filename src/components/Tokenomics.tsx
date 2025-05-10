@@ -68,7 +68,7 @@ const Tokenomics: React.FC = () => {
             
             <div className="bg-yellow-400/10 p-4 rounded-lg">
               <p className="text-center text-sm font-medium text-yellow-300">
-                Total Supply: 1,000,000,000,000 $ELE
+                Total Supply: 100,000,000 $ELE
               </p>
             </div>
           </div>
