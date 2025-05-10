@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;500;700&family=Space+Grotesk:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply text-gray-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Audiowide', cursive;
+    @apply font-bold leading-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-opacity-50;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-cyan-400 to-teal-500 text-white shadow-lg hover:shadow-xl focus:ring-cyan-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-teal-600 hover:bg-teal-700 text-white shadow-md hover:shadow-lg focus:ring-teal-500;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-white text-white hover:bg-white/10 focus:ring-white;
+  }
+  
+  .container-section {
+    @apply max-w-7xl mx-auto px-4 py-16 sm:px-6 md:py-24 lg:px-8;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl mb-8 text-white;
+  }
+  
+  .glow {
+    text-shadow: 0 0 10px rgba(45, 212, 191, 0.7), 0 0 20px rgba(45, 212, 191, 0.5);
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+  
+  .coin-spin {
+    animation: coin-spin 8s linear infinite;
+  }
+  
+  @keyframes coin-spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgba(45, 212, 191, 0.7),
+                   0 0 20px rgba(45, 212, 191, 0.5);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(45, 212, 191, 0.9),
+                   0 0 30px rgba(45, 212, 191, 0.7),
+                   0 0 40px rgba(45, 212, 191, 0.5);
+    }
+  }
+}

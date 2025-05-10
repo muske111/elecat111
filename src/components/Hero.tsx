@@ -1,0 +1,73 @@
+import React, { useState, useEffect } from 'react';
+import { TrendingUp, ArrowRightCircle } from 'lucide-react';
+
+const Hero: React.FC = () => {
+  const [price, setPrice] = useState(0.00000123);
+  const [change, setChange] = useState(8.76);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Simulate price changes
+      const newPrice = price + (Math.random() * 0.00000025 - 0.00000012);
+      const newChange = change + (Math.random() * 0.8 - 0.3);
+      
+      setPrice(newPrice);
+      setChange(newChange > 0 ? newChange : 0.1); // Keep it positive for demo
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [price, change]);
+  
+  return (
+    <section className="pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+      <div className="container-section relative">
+        <div className="absolute top-40 right-0 -rotate-12 opacity-20 w-96 h-96 bg-yellow-400 rounded-full blur-3xl" />
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="z-10">
+            <div className="inline-flex items-center px-4 py-2 mb-6 rounded-full bg-indigo-800/50 border border-indigo-600">
+              <TrendingUp className="h-4 w-4 text-green-400 mr-2" />
+              <span className="text-sm font-medium">
+                ${price.toFixed(9)} <span className="text-green-400">+{change.toFixed(2)}%</span>
+              </span>
+            </div>
+            
+            <h1 className="section-title glow mb-4">
+              $ELE: The Cat's <br />Journey Home
+            </h1>
+            
+            <p className="text-xl md:text-2xl mb-8 text-indigo-100 max-w-xl">
+              Join our beloved cat on its journey to find its owner. $ELE isn't just a meme coin; it's a story of hope and community.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <a href="#" className="btn btn-primary">
+                Buy $ELE Now
+              </a>
+              <a href="#story" className="btn btn-outline group">
+                Our Story <ArrowRightCircle className="ml-2 inline-block group-hover:translate-x-1 transition-transform" size={20} />
+              </a>
+            </div>
+          </div>
+          
+          <div className="relative">
+            <div className="relative z-10 p-6 float">
+              <img 
+                src="https://images.pexels.com/photos/2061057/pexels-photo-2061057.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="Sad cat looking for owner" 
+                className="w-full h-auto rounded-2xl shadow-2xl transform -rotate-3"
+              />
+              <div className="absolute -top-10 -right-10 w-24 h-24 coin-spin">
+                <div className="w-full h-full rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 flex items-center justify-center shadow-lg">
+                  <span className="font-bold text-xl text-gray-900">$ELE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
