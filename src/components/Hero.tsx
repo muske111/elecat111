@@ -53,7 +53,11 @@ const Hero: React.FC = () => {
           <div className="relative">
             <div className="relative z-10 p-6 float">
               <img 
-                src=<img src="https://raw.githubusercontent.com/muske111/elecat111/main/cryingcat.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Crying Cat">
+                src=<img
+  src="https://raw.githubusercontent.com/muske111/elecat111/main/cryingcat.jpeg"
+  alt="Crying Cat"
+  style={{ width: '300px', borderRadius: '12px' }}
+/>
                 alt="Sad cat looking for owner" 
                 className="w-full h-auto rounded-2xl shadow-2xl transform -rotate-3"
               />
