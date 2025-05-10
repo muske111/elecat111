@@ -45,7 +45,6 @@ const Tokenomics: React.FC = () => {
                   delay={0.3}
                   isAnimated={animateChart}
                 />
-                
                 <TokenStat
                   title="Charity Fund"
                   percentage={5}
