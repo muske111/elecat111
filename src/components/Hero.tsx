@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             <div className="inline-flex items-center px-4 py-2 mb-6 rounded-full bg-indigo-800/50 border border-indigo-600">
               <TrendingUp className="h-4 w-4 text-green-400 mr-2" />
               <span className="text-sm font-medium">
-                ${price.toFixed(9)} <span className="text-green-400">+{change.toFixed(2)}%</span>
+                </span>
               </span>
             </div>
 
