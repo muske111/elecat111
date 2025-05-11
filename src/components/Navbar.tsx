@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
             <a href="#story" className="text-gray-200 hover:text-yellow-300 transition-colors">Story</a>
             <a href="#tokenomics" className="text-gray-200 hover:text-yellow-300 transition-colors">Tokenomics</a>
             <a href="#community" className="text-gray-200 hover:text-yellow-300 transition-colors">Community</a>
-            <a href="#" className="btn btn-primary">Buy Now</a>
+            <a href="https://gmgn.ai/sol/token/4AhaE5WXM5ezxrSv6UJqjcYJYvgc7wGLonmHNuC2pump" className="btn btn-primary">Buy Now</a>
           </div>
           
           <div className="md:hidden">
