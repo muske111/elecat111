@@ -31,23 +31,6 @@ const Community: React.FC = () => {
             textColor="text-[#0088cc]"
           />
           
-          <SocialCard 
-            icon={<Discord className="h-10 w-10" />}
-            name="Discord"
-            description="Chat with the team"
-            link="#"
-            bgColor="bg-[#7289DA]/10 hover:bg-[#7289DA]/20"
-            textColor="text-[#7289DA]"
-          />
-          
-          <SocialCard 
-            icon={<Github className="h-10 w-10" />}
-            name="GitHub"
-            description="View our code"
-            link="https://github.com/muske111/elecat111/tree/main"
-            bgColor="bg-gray-500/10 hover:bg-gray-500/20"
-            textColor="text-gray-300"
-          />
         </div>
         
         <div className="mt-20">
