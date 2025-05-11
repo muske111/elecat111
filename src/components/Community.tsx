@@ -11,8 +11,7 @@ const Community: React.FC = () => {
             Become part of Ele's journey and connect with fellow believers
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center place-items-center">
           <SocialCard 
             icon={<Twitter className="h-10 w-10" />}
             name="Twitter"
