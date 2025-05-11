@@ -1,37 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { TrendingUp, ArrowRightCircle } from 'lucide-react';
+import React from 'react';
+import { ArrowRightCircle } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const [price, setPrice] = useState(0.00000123);
-  const [change, setChange] = useState(8.76);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const newPrice = price + (Math.random() * 0.00000025 - 0.00000012);
-      const newChange = change + (Math.random() * 0.8 - 0.3);
-
-      setPrice(newPrice);
-      setChange(newChange > 0 ? newChange : 0.1);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [price, change]);
-
   return (
     <section className="pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       <div className="container-section relative">
         <div className="absolute top-40 right-0 -rotate-12 opacity-20 w-96 h-96 bg-yellow-400 rounded-full blur-3xl" />
 
-        {/* ✅ This div was missing! */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="z-10">
-            <div className="inline-flex items-center px-4 py-2 mb-6 rounded-full bg-indigo-800/50 border border-indigo-600">
-              <TrendingUp className="h-4 w-4 text-green-400 mr-2" />
-              <span className="text-sm font-medium">
-                </span>
-              </span>
-            </div>
-
             <h1 className="section-title glow mb-4">
               $ELE: The Cat's <br />Journey Home
             </h1>
@@ -64,7 +41,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-        </div> {/* ✅ This closes the new grid container */}
+        </div>
       </div>
     </section>
   );
