@@ -36,7 +36,7 @@ const Community: React.FC = () => {
         <div className="mt-20">
           <div className="bg-indigo-900/30 backdrop-blur-sm rounded-2xl p-8 border border-indigo-800/50 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center text-yellow-300">
-              Upcoming Events
+              Roadmap
             </h3>
             
             <div className="space-y-6">
