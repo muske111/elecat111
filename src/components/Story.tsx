@@ -7,6 +7,7 @@ const Story: React.FC = () => {
       <div className="container-section">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title">The Story Behind $ELE</h2>
+          <h3>Contract Address soon </h3>
           <p className="text-xl text-green-900">
             A heartwarming journey of a cat finding its way back home
           </p>
