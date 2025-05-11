@@ -31,7 +31,7 @@ const Tokenomics: React.FC = () => {
                 <TokenStat
                   title="Community Pool"
                   percentage={70}
-                  description="70% of tokens are distributed to the community"
+                  description="75% of tokens are distributed to the community"
                   color="from-blue-400 to-indigo-500"
                   delay={0.1}
                   isAnimated={animateChart}
