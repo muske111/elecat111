@@ -40,21 +40,22 @@ const Community: React.FC = () => {
             </h3>
             
             <div className="space-y-6">
-              <EventCard 
-                date="June 15, 2025"
-                title="$ELE Token Launch"
-                description="Join us for the official launch of $ELE token on major exchanges."
+              <EventCard
+                title="$ELE The Birth of the Meme"
+                description="Idea sparks during a late-night meme binge"
               />
               
-              <EventCard 
-                date="July 1, 2025"
-                title="Community AMA"
-                description="Ask Me Anything session with the $ELE development team."
+              <EventCard
+                title="The Meme Awakens"
+                description="Token smart contract deployed and Fair Launch"
+              />
+              <EventCard
+                title="Viral Velocity"
+                description="CEX listing."
               />
               
-              <EventCard 
-                date="July 15, 2025"
-                title="Charity Donation"
+              <EventCard
+                title="Viral Velocity"
                 description="First donation to cat shelters from our charity fund."
               />
             </div>
