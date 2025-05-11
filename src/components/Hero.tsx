@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a href="#" className="btn btn-primary">
+              <a href="https://gmgn.ai/sol/token/4AhaE5WXM5ezxrSv6UJqjcYJYvgc7wGLonmHNuC2pump" className="btn btn-primary">
                 Buy $ELE Now
               </a>
               <a href="#story" className="btn btn-outline group">
