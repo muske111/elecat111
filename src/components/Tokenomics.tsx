@@ -66,8 +66,8 @@ const Tokenomics: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <FeatureCard 
               icon={<DollarSign className="h-8 w-8 text-yellow-400" />}
-              title="2% Redistribution"
-              description="2% of all transactions are redistributed to holders"
+              title="0% Tax"
+              description="0% of all transactions"
             />
             
             <FeatureCard 
