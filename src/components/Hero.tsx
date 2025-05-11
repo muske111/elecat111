@@ -30,10 +30,10 @@ const Hero: React.FC = () => {
           <div className="relative">
             <div className="relative z-10 p-6 float">
               <img 
-                src="https://raw.githubusercontent.com/muske111/elecat111/blob/main/b65cf5eb-c973-4c28-b667-5c2740612096.png"
-                alt="Sad cat looking for owner" 
-                className="w-full max-w-sm h-auto rounded-2xl shadow-2xl transform -rotate-3"
-              />
+  src="https://raw.githubusercontent.com/muske111/elecat111/main/b65cf5eb-c973-4c28-b667-5c2740612096.png"
+  alt="Sad cat looking for owner" 
+  className="w-full max-w-sm h-auto rounded-2xl shadow-2xl transform -rotate-3"
+/>
               <div className="absolute -top-10 -right-10 w-24 h-24 coin-spin">
                 <div className="w-full h-full rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 flex items-center justify-center shadow-lg">
                   <span className="font-bold text-xl text-gray-900">$ELE</span>
