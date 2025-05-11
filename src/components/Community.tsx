@@ -1,5 +1,6 @@
 import React from 'react';
-import { Twitter, Instagram as Telegram, Disc as Discord, Github } from 'lucide-react';
+import { Twitter, Send as Telegram, Disc as Discord, Github } from 'lucide-react';
+
 
 const Community: React.FC = () => {
   return (
